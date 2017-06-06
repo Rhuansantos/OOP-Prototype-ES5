@@ -1,0 +1,69 @@
+<!-- 
+Student: Rhuan Souza
+Class: WDD312-L 00 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Index</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="scss/css/main.css">
+</head>
+<body>
+
+<header>
+	<h1>Shelter Dashboard</h1>
+</header>
+
+
+<div class="container-optional">
+
+	<div class="row">
+
+	<section  class="col-xs-4">
+		<div id="summary">
+			<h4>Pet Averge Age: <span id="ageAvg"></span></h4>
+		</div>
+		<form id="insertPet" action="">
+			<p>
+				<h2>Add a new pet</h2>
+			</p>
+			<p>
+				<input id="name" type="text" placeholder="Pet Name">
+			</p>
+			<p>
+				<input id="age" type="number" placeholder="Pet Age" min="0">
+			</p>
+			<p>
+				<select id="type">
+					<option value="null" selected disabled>Select a type</option>
+					<option value="Cat">Cat</option>
+					<option value="Dog">Dog</option>
+				</select>
+			</p>
+			<!-- static method -->
+			<p>
+				<label>Shelter Location ( * Static Method )</label>
+				<input id="shelter" type="text" value="Orlando-Fl">
+			</p>
+			<button class="btn btn-primary" type="btnSubmit">Create</button>
+		</form>
+	</section>
+
+	<section class="col-xs-8" id="listContainer">
+		<ul id="petList">
+			<li></li>
+		</ul>
+	</section>
+
+
+	</div>
+</div>
+
+
+
+		<script type="text/javascript" src="build/main.js"></script>
+	</body>
+</html>
