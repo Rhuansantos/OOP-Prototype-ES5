@@ -51,8 +51,12 @@ var Pet = (function() {
 
     }
     Pet.prototype.display = function() {
+
+        var tempAge = [];
     	// display pets from the array
         petArray.forEach(function(el, i) {
+
+            tempAge.push(Number(el.age));
             var template = `
 				 <li data-key=${i}>
 					<h4>Name: ${el.name}</h4>
@@ -65,6 +69,9 @@ var Pet = (function() {
             petContainer.insertAdjacentHTML('beforeend', template);
 
         });
+
+        var ageAvg = Util.avg(tempAge);
+        document.getElementById('ageAvg').innerHTML = ageAvg;
     };
 
     return Pet;
