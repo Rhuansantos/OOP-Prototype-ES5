@@ -5,7 +5,7 @@ var petContainer = document.getElementById('petList');
 var Shelter = (function() {
     function Shelter(_id, _location) {
         this.id = _id;
-        this.shelterLocation = 'Orlando';
+        this._location = 'Orlando';
     }
     return Shelter;
 });
