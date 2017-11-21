@@ -12,7 +12,6 @@ var Shelter = (function() {
 
 var Pet = (function() {
     Pet.prototype = Object.create(Shelter.prototype);
-
     function Pet(_name, _age, _type, _location) {
         Shelter.call(this);
         this.shelterLocation = _location;
